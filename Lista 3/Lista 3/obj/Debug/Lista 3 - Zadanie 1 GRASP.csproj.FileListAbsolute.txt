@@ -1,0 +1,10 @@
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\Lista 3.exe.config
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\Lista 3.exe
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\Lista 3.pdb
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\UnityEngine.dll
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\UnityEngine.xml
+R:\Code\POO\Lista 3\Lista 3\obj\Debug\Lista 3 - Zadanie 1 GRASP.csprojResolveAssemblyReference.cache
+R:\Code\POO\Lista 3\Lista 3\obj\Debug\Lista 3.exe
+R:\Code\POO\Lista 3\Lista 3\obj\Debug\Lista 3.pdb
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\System.Web.Mvc.dll
+R:\Code\POO\Lista 3\Lista 3\bin\Debug\System.Web.Mvc.xml
