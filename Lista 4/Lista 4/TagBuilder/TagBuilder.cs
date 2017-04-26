@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,9 @@ namespace Lista_4.TagBuilder
             this.tagName = TagName;
             this.parent = Parent;
         }
+
+        public bool IsIndented;
+        public int Indentation;
 
         private string tagName;
         private TagBuilder parent;
@@ -85,6 +89,32 @@ namespace Lista_4.TagBuilder
                 tag.Append("/>");
 
             return tag.ToString();
+        }
+    }
+
+    public class TagBuilderTest
+    {
+        public void Execute()
+        {
+            StringWriter writer = new StringWriter();
+            TagBuilder tag = new TagBuilder();
+            tag.IsIndented = true;
+            tag.Indentation = 4;
+            tag.StartTag("parent")
+            .AddAttribute("parentproperty1", "true")
+            .AddAttribute("parentproperty2", "5")
+            .StartTag("child1")
+            .AddAttribute("childproperty1", "c")
+            .AddContent("childbody")
+            .EndTag()
+            .StartTag("child2")
+            .AddAttribute("childproperty2", "c")
+            .AddContent("childbody")
+            .EndTag()
+            .EndTag()
+            .StartTag("script")
+            .AddContent("$.scriptbody();")
+            .EndTag();
         }
     }
 }

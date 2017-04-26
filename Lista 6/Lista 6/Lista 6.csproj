@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA5432E3-EE2E-4B64-A012-56D191BE2E70}</ProjectGuid>
+    <ProjectGuid>{FDDD30D6-9C3E-42A4-913F-BC631712B853}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lista_4</RootNamespace>
-    <AssemblyName>Lista 4</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Lista_6</RootNamespace>
+    <AssemblyName>Lista 6</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -43,27 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Airport\Airport.cs" />
+    <Compile Include="Exercise3\HomeboyVisitor\Tree.cs" />
+    <Compile Include="NullObject\ILogger.cs" />
+    <Compile Include="NullObject\LoggerFactory.cs" />
+    <Compile Include="NullObject\LogType.cs" />
+    <Compile Include="NullObject\NoLogger.cs" />
+    <Compile Include="NullObject\NullObjectShow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShapesAndFactories\Interfaces\IShape.cs" />
-    <Compile Include="ShapesAndFactories\Interfaces\IShapeFactoryWorker.cs" />
-    <Compile Include="ShapesAndFactories\Shapes\Disc.cs" />
-    <Compile Include="ShapesAndFactories\Shapes\Rectangle.cs" />
-    <Compile Include="ShapesAndFactories\ShapeFactory.cs" />
-    <Compile Include="Singleton\Singleton.cs" />
-    <Compile Include="TagBuilder\TagBuilder.cs" />
+    <Compile Include="Exercise3\StrangerVisitor\Tree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
